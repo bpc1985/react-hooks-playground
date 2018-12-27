@@ -100,7 +100,7 @@ const defaultVideos = {
   playlistId: "hung-music-playlist-id-123456789"
 };
 
-const MyVideoPlayer = props => {
+const MyVideoPlayer = (props) => {
   const videos = {...defaultVideos};
   const savedState = JSON.parse(localStorage.getItem(`${videos.playlistId}`));
 
@@ -174,7 +174,7 @@ const MyVideoPlayer = props => {
         <StyledMyVideoPlayer>
           <Video
             active={state.activeVideo}
-            autoplay={Playlist.autoplay}
+            autoplay={state.autoplay}
             endCallback={endCallback}
             progressCallback={progressCallback} />
           <Playlist

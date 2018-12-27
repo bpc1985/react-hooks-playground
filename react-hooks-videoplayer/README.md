@@ -1,4 +1,4 @@
-Demo: https://react-hooks-videoplayer-3co5xttw8.now.sh
+Demo: https://react-hooks-videoplayer-hung-ho-jah6xgnpg.now.sh
 
 Steps to make it work
 
@@ -9,3 +9,11 @@ Steps to make it work
 3. Run Yarn start
 
 4. Test at localhost:3000
+
+When seeing errors such as
+
++ TypeError: Object(…) is not a function React
+
++ TypeError: dispatcher.useState is not a function
+
+Please run yarn add react@next react-dom@next
