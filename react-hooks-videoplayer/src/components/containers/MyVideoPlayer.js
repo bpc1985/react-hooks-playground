@@ -134,7 +134,7 @@ const MyVideoPlayer = props => {
       } else {
         props.history.push({
           pathname: `/${state.activeVideo.id}`,
-          autoplay: false
+          autoplay: true
         });
       }
     },
@@ -151,7 +151,7 @@ const MyVideoPlayer = props => {
     const nextVideoIndex = currentVideoIndex === state.videos.length - 1 ? 0 : currentVideoIndex + 1;
     props.history.push({
       pathname: `/${state.videos[nextVideoIndex].id}`,
-      autoplay: false
+      autoplay: true
     });
   };
 
